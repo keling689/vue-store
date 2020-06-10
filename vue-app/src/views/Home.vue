@@ -11,6 +11,17 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
+  provide(){
+	  return {
+		  home:this
+	  }
+  },
+  data(){
+	return {
+		name:'chen',
+		last:'bin'
+	}  
+  },
   components: {
     HelloWorld
   }
